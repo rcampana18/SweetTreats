@@ -1,0 +1,226 @@
+ /*Reseteo*/
+ *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+/*Limpiamos los estilos de los enlaces y listas*/
+a {
+        text-decoration: none;
+}
+
+ul,ol,li {
+        list-style-type: none;
+}
+
+body {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 200;
+        font-style: normal;
+}
+
+.nav_bar {
+        background-color: #f8bfba;
+        position: fixed;  /* lo fija en la pantalla */
+        top: 0;           /* pegado al borde superior */
+        left: 0;
+        width: 100%;      /* ocupa todo el ancho */
+        z-index: 1000;    /* para que esté sobre otros elementos */
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* separa logo y links */
+        gap: 15px;
+}
+
+.user_nav {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 15px;
+
+}
+
+.user_nav a {
+  text-decoration: none;
+  color: #5c214b;
+  font-weight: bold;
+  font-family: var(--font-headings);
+  transition: color 0.3s ease;
+}
+
+.user_nav a:hover {
+  color: #d16fb3;
+}
+
+.logo img {
+        height: 50px;
+        width: auto;
+}
+
+header {  
+        background-image: url('../img/backgroundflowers.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 250px;
+        padding: 100px 20px 20px; /* Sumo padding en tip para compensar el navbar */
+}
+
+.title-search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+}
+
+.buscador input {
+        padding: 8px 20px;
+        border: 2px solid rgb(180, 58, 137);
+        border-radius: 6px;
+}
+
+.buscador button {
+        padding: 8px 20px;
+        border: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+}
+
+.nosotros {
+        background-color: #FFF5E1; 
+        border: 2px dashed #e89ac7; /* borde decorativo */
+        border-radius: 16px;
+        padding: 40px 30px;
+        max-width: 800px;
+        margin: 60px auto;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+.productos {
+        background-image: url('../img/backgroundflowers.jpg');
+        background-size: cover; /* que cubra toda la */
+        background-repeat: no-repeat; /* que no se repita */
+        background-position: center;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px; /*Con el gap hago que siempre se mantenga un espacio entre los objetos aunque achique la pantalla*/
+        flex-wrap: wrap;/*Esto hace que si yo achico la ventana el contenido se acomode para entrar, sino como que se angosta y queda todo apretado*/
+        padding: 20px;        
+}
+
+.producto {
+        background-color:#FBE9E7;
+        width: 22%;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+}
+
+.producto img {
+        border-radius: 8px;
+        width: 100%; /*Se acomoda en relacion a la caja padre */
+
+}
+
+.producto h2 {
+        margin: 10px 0;
+        word-break: break-word;
+}
+
+.btn_carrito:hover {
+        transform: translateY(-2px);
+}
+
+.btn_carrito  {
+        background-color:#f8bfba;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 8px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: all 0.3s ease;
+ }
+
+.comentarios_title {
+        padding: 20px;
+        text-align: center;
+        background-color: #FFF5E1;
+}
+
+.grupo_comentarios {
+        background-color:#FFF5E1;
+        padding: 20px 20px 50px;    
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px; /*Con el gap hago que siempre se mantenga un espacio entre los objetos aunque achique la pantalla*/
+        flex-wrap: wrap;/*Esto hace que si yo achico la ventana el contenido se acomode para entrar, sino como que se angosta y queda todo apretado*/
+    
+}
+
+.comentarios_individual {
+        background-color:#f8bfba;
+        font-style: oblique;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px dashed #e89ac7;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contacto {
+        background-image: url('../img/backgroundflowers.jpg');
+        background-size: cover; /* que cubra toda la */
+        background-repeat: no-repeat; /* que no se repita */
+        background-position: center;
+        padding: 20px;
+}
+
+.contacto_title {
+        text-align: center;
+}
+
+.form_contacto {
+        background-color: #f8bfba;
+        max-width: 500px;
+        margin: 1rem auto;
+        padding: 2rem;
+        border-radius: 10px;
+        border: 2px dashed #e89ac7;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.form_contacto input,
+.form_contacto select,
+.form_contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+
+footer {
+       background-color: #f8bfba;
+        text-align: center;
+}
+

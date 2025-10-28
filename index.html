@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+         
+        <nav class="nav_bar">
+            <div class="logo">
+                <img src="./img/Logo2.png" alt="logo">
+            </div>
+            <ul class="user_nav">
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Comentarios.html">Reseñas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            
+            </ul>
+        </nav>
+
+        <div class="title-search">
+                <h1>Sweet Treats</h1>
+                <form action="/Proyecto Tienda/search-results.html" method="get" class="buscador">
+                    <input type="text" placeholder="Buscar..." name="Buscar"  value="">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>  
+
+    </header>
+
+    <main>
+                
+        <section class="nosotros">
+        <h3>En Sweet Treats creemos que cada momento merece un toque dulce. Somos un emprendimiento familiar apasionado por la pastelería artesanal, donde cada torta, cupcake y macaron se prepara con dedicación, creatividad y mucho amor. Nuestra misión es transformar lo cotidiano en algo especial, una delicia a la vez.
+        </h3>
+        </section>
+        
+        <section class="productos">
+
+            <article class="producto">
+            <img src="./img/Product6.jpg" alt="Producto 1">
+            <h2>Tortas Personalizadas</h2>
+            <p>Consultar</p>
+            <a href="" class="btn_carrito"> Agregar al Carrito</a>
+            </article>
+
+            <article class="producto">
+            <img src="./img/Product2.jpg" alt="Producto 2">
+            <h2>Cupcakes (unidad)</h2>
+            <p>$3.999</p>
+            <a href="" class="btn_carrito"> Agregar al Carrito</a>
+            </article>
+
+            <article class="producto">
+            <img src="./img/Product4.jpg" alt="Producto 3">
+            <h2>Box Macarons x12</h2>
+            <p>$14.999</p>
+            <a href="" class="btn_carrito"> Agregar al Carrito</a>
+           
+            </article>
+
+        </section>
+
+        <section class="comentarios">
+            
+            <div class="comentarios_title">
+                <h2>¿Qué dicen nuestros clientes?</h2>
+            </div>
+        
+            <div class="grupo_comentarios">       
+                <div class="comentarios_individual">
+                <h2>Melanie C.</h2>
+                <p>"Pedí una caja de macarons para regalar y fue un éxito total. No solo eran hermosos, ¡estaban deliciosos! Se nota el amor en cada detalle."</p>       
+                </div>
+                <div class="comentarios_individual">
+                <h2>Sofia</h2>
+                <p>"Los cupcakes personalizados que encargué para el cumpleaños de mi hija fueron un sueño. El sabor, la presentación... todo impecable. ¡Gracias por hacer ese día aún más especial!"</p>       
+                </div>
+                <div class="comentarios_individual">
+                <h2>Mauro</h2>
+                <p>"Sweet Treats es mi lugar favorito para darme un gusto. Siempre pruebo algo nuevo y nunca me decepcionan. Atención excelente y productos de calidad."</p>       
+                </div>
+            </div>
+        </section>
+        
+        <section class="contacto">
+            <div class="contacto_title">
+             <h2>Contacto</h2>
+            </div>
+            
+            <div class="form_contacto"> 
+                <form action="/Proyecto Tienda/search-results.html" method="get" class="buscador">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre"  name="nombre contacto" value="">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="correo electronico" value="">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo contacto">
+                            <option value="seleccionar">Por favor elige una opcion</option>
+                            <option value="cotizar">Cotizar pedido</option>
+                            <option value="problema pedido">Tengo un problema con un pedido</option>
+                            <option value="empleo">Quiero trabajar con ustedes</option>
+                            <option value="otro">Otro</option>
+                    </select>
+                    <textarea name="mensaje" id="mensaje">Escribe tu mensaje</textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+       
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Todos los derechos reservados. Romina Campaña</p>
+    </footer>
+</body>
+</html>
