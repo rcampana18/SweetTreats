@@ -225,13 +225,26 @@ footer {
         text-align: center;
 }
 
-@media (min-width: 600px)  {
+@media (min-width: 480px)  {
 
+        .nav_bar {
+                display: flex;
+                align-items: center;
+
+        }
+        
+        .user_nav {
+                display: flex;
+                flex-direction: column;
+        }
+
+
+        
         .producto, .comentario_individual {
         max-width: 300px;
         padding: 20px;
         overflow: hidden;
-
+        }
 
         .productos {
 
@@ -247,7 +260,7 @@ footer {
         }
 
        
-}
+
 
 }
 
