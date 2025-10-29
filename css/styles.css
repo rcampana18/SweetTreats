@@ -227,6 +227,13 @@ footer {
 
 @media (max-width: 480px)  {
 
+        header {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+        }
+        
         .nav_bar {
                 display: flex;
                 align-items: center;
@@ -239,9 +246,8 @@ footer {
         }
 
 
-        
         .producto, .comentario_individual {
-        max-width: 300px;
+        max-width: 2rem;
         padding: 20px;
         overflow: hidden;
         }
